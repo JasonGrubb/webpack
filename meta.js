@@ -18,7 +18,7 @@ module.exports = {
       "type": "string",
       "required": false,
       "message": "Project description",
-      "default": "A Vue.js project"
+      "default": "Appstate Vue.js project"
     },
     "author": {
       "type": "string",
@@ -32,13 +32,7 @@ module.exports = {
           "name": "Runtime + Compiler: recommended for most users",
           "value": "standalone",
           "short": "standalone"
-        },
-        {
-          "name": "Runtime-only: about 6KB lighter min+gzip, but templates (or any Vue-specific HTML) are ONLY allowed in .vue files - render functions are required elsewhere",
-          "value": "runtime",
-          "short": "runtime"
-        }
-      ]
+        }      ]
     },
     "router": {
       "type": "confirm",
@@ -57,11 +51,6 @@ module.exports = {
           "name": "Standard (https://github.com/feross/standard)",
           "value": "standard",
           "short": "Standard"
-        },
-        {
-          "name": "AirBNB (https://github.com/airbnb/javascript)",
-          "value": "airbnb",
-          "short": "AirBNB"
         },
         {
           "name": "none (configure it yourself)",
