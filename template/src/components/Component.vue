@@ -23,7 +23,7 @@
 <script>
 export default {
   name: 'component',
-  data() {
+  data () {
     return {
       msg: 'Welcome to Your Vue.js App'
     }
