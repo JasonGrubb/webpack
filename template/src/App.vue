@@ -1,25 +1,14 @@
 <template>
   <div id="app">
     <img src="./assets/logo.png">
-    {{#router}}
     <router-view></router-view>
-    {{else}}
-    <component></component>
-    {{/router}}
   </div>
 </template>
 
 <script>
-{{#unless router}}
-import Component from './components/Component'{{#if_eq lintConfig "airbnb"}};{{/if_eq}}
-
-{{/unless}}
 export default {
-  name: 'app'{{#router}}{{#if_eq lintConfig "airbnb"}},{{/if_eq}}{{else}},
-  components: {
-    Component{{#if_eq lintConfig "airbnb"}},{{/if_eq}}
-  }{{#if_eq lintConfig "airbnb"}},{{/if_eq}}{{/router}}
-}{{#if_eq lintConfig "airbnb"}};{{/if_eq}}
+  name: 'app'
+}
 </script>
 
 <style>
