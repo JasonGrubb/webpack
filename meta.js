@@ -24,16 +24,6 @@ module.exports = {
       "type": "string",
       "message": "Author"
     },
-    "build": {
-      "type": "list",
-      "message": "Vue build",
-      "choices": [
-        {
-          "name": "Runtime + Compiler: recommended for most users",
-          "value": "standalone",
-          "short": "standalone"
-        }      ]
-    },
     "unit": {
       "type": "confirm",
       "message": "Setup unit tests with Karma + Mocha?"
