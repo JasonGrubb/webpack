@@ -12,7 +12,9 @@ module.exports = {
   globals: {
     '$'    : true,
     '_'    : true,
-    'utils': true
+    'utils': true,
+    'opts' : true,
+    'vue'  : true
   },
   // https://github.com/feross/standard/blob/master/RULES.md#javascript-standard-style
   extends: 'vue',
