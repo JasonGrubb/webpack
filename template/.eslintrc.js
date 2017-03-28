@@ -32,6 +32,7 @@ module.exports = {
     'no-debugger': process.env.NODE_ENV === 'production' ? 2 : 0,
     // Allow alignment
     'no-multi-spaces': [2, { exceptions: { "AssignmentExpression": true, "VariableDeclarator": true, "ImportDeclaration": true}}],
-    'key-spacing': [1, {"align": "colon"}]
+    'key-spacing': [1, {"align": "colon"}],
+    'camelcase': [1, {properties: "always"}]
   }
 }
