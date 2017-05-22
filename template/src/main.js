@@ -3,6 +3,7 @@ import App from './App'
 import router from './router'
 import store from './store/store'
 import Buefy from 'buefy'
+import moment from 'moment'
 import 'bulma/css/bulma.css'
 import 'font-awesome/css/font-awesome.css'
 import 'buefy/lib/buefy.css'
@@ -15,7 +16,9 @@ Vue.filter('formatDate', function (value) {
   }
 })
 
-Vue.component(Buefy.Table.name, Buefy.Table)
+Vue.use(Buefy, {
+  defaultIconPack: 'fa'
+})
 
 /* eslint-disable no-new */
 new Vue({
