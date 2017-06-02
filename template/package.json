@@ -7,7 +7,8 @@
   "scripts": {
     "dev": "node build/dev-server.js",
     "start": "node build/dev-server.js",
-    "build": "node build/build.js",{{#unit}}
+    "build": "node build/build.js",
+    "build_preprod": "node build/build_preprod.js",{{#unit}}
     "unit": "cross-env BABEL_ENV=test karma start test/unit/karma.conf.js --single-run",{{/unit}}{{#e2e}}
     "e2e": "node test/e2e/runner.js",{{/e2e}}{{#if_or unit e2e}}
     "test": "{{#unit}}npm run unit{{/unit}}{{#unit}}{{#e2e}} && {{/e2e}}{{/unit}}{{#e2e}}npm run e2e{{/e2e}}",{{/if_or}}
@@ -15,6 +16,10 @@
   },
   "dependencies": {
     "axios": "^0.15.3",
+    "buefy": "^0.3.1",
+    "bulma": "^0.4.1",
+    "font-awesome": "^4.7.0",
+    "moment": "^2.18.1",
     "vue": "^2.3.3",
     "vue-router": "^2.3.1",
     "vuex": "^2.2.1"
