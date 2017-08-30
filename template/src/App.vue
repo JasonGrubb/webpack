@@ -1,13 +1,24 @@
 <template>
   <div id="app">
     <img src="./assets/logo.png">
+    {{#router}}
     <router-view></router-view>
+    {{else}}
+    <component></component>
+    {{/router}}
   </div>
 </template>
 
 <script>
+{{#unless router}}
+import Component from './components/Component'
+
+{{/unless}}
 export default {
-  name: 'app'
+  name: 'app'{{#router}}{{else}},
+  components: {
+    Component
+  }{{/router}}
 }
 </script>
 

@@ -14,10 +14,11 @@ module.exports = {
     '_'    : true,
     'utils': true,
     'opts' : true,
-    'vue'  : true
+    'vue'  : true,
+    'M'    : true
   },
-  // https://github.com/feross/standard/blob/master/RULES.md#javascript-standard-style
-  extends: 'vue',
+  // https://github.com/standard/standard/blob/master/docs/RULES-en.md
+  extends: 'standard',
   // required to lint *.vue files
   plugins: [
     'html'

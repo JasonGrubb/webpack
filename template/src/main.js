@@ -1,6 +1,8 @@
 import Vue from 'vue'
 import App from './App'
+{{#router}}
 import router from './router'
+{{/router}}
 import store from './store/store'
 import Buefy from 'buefy'
 import moment from 'moment'
@@ -23,7 +25,9 @@ Vue.use(Buefy, {
 /* eslint-disable no-new */
 new Vue({
   el        : '#app',
+  {{#router}}
   router,
+  {{/router}}
   store,
   template  : '<App/>',
   components: { App }
