@@ -59,7 +59,8 @@ $colors: (
     "info": ($info, $info-invert),
     "success": ($success, $success-invert),
     "warning": ($warning, $warning-invert),
-    "danger": ($danger, $danger-invert)
+    "danger": ($danger, $danger-invert),
+    "primary-invert": ($primary-invert, $primary)
 );
 
 // Links
